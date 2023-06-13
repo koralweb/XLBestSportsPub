@@ -1,0 +1,153 @@
+const products = [
+  {
+    title: 'Del Mare',
+    image: require('../assets/p1.jpg'),
+    desc: 'Salsa pizza, salmón, gambas, tomates cherry, alcaparras, queso mozzarella, salsa pesto, rúcula',
+    price: 99,
+    type: 'Pizza',
+  },
+  {
+    title: 'Mirtillo Rosso',
+    image: require('../assets/p2.jpg'),
+    desc: 'Salsa de crema, filete de pollo, queso azul, queso mozzarella, salsa de arándanos',
+    price: 89,
+    type: 'Pizza',
+  },
+  {
+    title: 'Chile con pollo',
+    image: require('../assets/p3.jpg'),
+    desc: 'Salsa de pizza, filete de pollo, pimiento fresco, cebolla caramelizada, queso mozzarella, queso cheddar, salsa de chili dulce',
+    price: 83,
+    type: 'Pizza',
+  },
+  {
+    title: 'Pepperoni ahumado',
+    image: require('../assets/p4.jpg'),
+    desc: 'Salsa de pizza, pepperoni picante, tocino, caramelizado. cebolla, queso mozzarella, salsa barbacoa',
+    price: 84,
+    type: 'Pizza',
+  },
+  {
+    title: 'Margarita dolce',
+    image: require('../assets/p5.jpg'),
+    desc: 'Salsa de tomate, tomates frescos, salsa pesto, queso mozzarella, queso parmesano',
+    price: 60,
+    type: 'Pizza',
+  },
+  {
+    title: 'Filadelfia con aguacate',
+    image: require('../assets/r1.jpg'),
+    desc: 'Salmón, requesón, aguacate, arroz, nori',
+    price: 48,
+    type: 'Rolls',
+  },
+  {
+    title: 'Filadelfia con camarones',
+    image: require('../assets/r2.jpg'),
+    desc: 'Arroz, salmón, camarón tigre, requesón, nori',
+    price: 49,
+    type: 'Rolls',
+  },
+  {
+    title: 'Rollo unagi',
+    image: require('../assets/r3.jpg'),
+    desc: 'Arroz, filete de anguila ahumada, salmón, requesón, pepino fresco, salsa Unagi, semillas de sésamo, nori',
+    price: 54,
+    type: 'Rolls',
+  },
+  {
+    title: 'Rollo de Japón',
+    image: require('../assets/r4.jpg'),
+    desc: 'Arroz, filete de anguila ahumada, salmón, requesón, pepino fresco, salsa Unagi, semillas de sésamo, nori',
+    price: 52,
+    type: 'Rolls',
+  },
+  {
+    title: 'Anguila cremosa',
+    image: require('../assets/r5.jpg'),
+    desc: 'Arroz, filete de anguila ahumada, requesón, salsa unagi, semillas de sésamo, nori',
+    price: 38,
+    type: 'Rolls',
+  },
+  {
+    title: 'Sushi con atun',
+    image: require('../assets/s1.webp'),
+    desc: 'Atún, arroz, nori, salsa',
+    price: 99,
+    type: 'Sushi',
+  },
+  {
+    title: 'Sushi de camarones',
+    image: require('../assets/s2.webp'),
+    desc: 'Arroz, camarones',
+    price: 11,
+    type: 'Sushi',
+  },
+  {
+    title: 'Sushi con salmón',
+    image: require('../assets/s33.webp'),
+    desc: 'Arroz, salmón',
+    price: 12,
+    type: 'Sushi',
+  },
+  {
+    title: 'Sushi con anguila',
+    image: require('../assets/s4.webp'),
+    desc: 'Arroz, anguila ahumada, nori',
+    price: 10,
+    type: 'Sushi',
+  },
+  {
+    title: 'Gunkan con atún',
+    image: require('../assets/s5.webp'),
+    desc: 'Atún, arroz, nori, salsa',
+    price: 11,
+    type: 'Sushi',
+  },
+  {
+    title: 'Rollo dulce hawaiano',
+    image: require('../assets/d1.webp'),
+    desc: 'Panqueque cremoso, queso crema, manzana, plátano, salsa de chocolate',
+    price: 25,
+    type: 'Dessert',
+  },
+  {
+    title: 'Rollo dulce tropical',
+    image: require('../assets/d2.webp'),
+    desc: 'Panqueque cremoso, queso crema, piña, kiwi, salsa de bayas',
+    price: 26,
+    type: 'Dessert',
+  },
+  {
+    title: 'Rollo dulce Bongiorno',
+    image: require('../assets/d3.webp'),
+    desc: 'Arroz con leche, queso crema, plátano, naranja, chocolate, salsa de chocolate.',
+    price: 25,
+    type: 'Dessert',
+  },
+  {
+    title: 'Dulce vida dulce rollo',
+    image: require('../assets/d4.webp'),
+    desc: 'Arroz con leche, queso, melocotón, kiwi, coco, salsa de bayas',
+    price: 25,
+    type: 'Dessert',
+  },
+  {
+    title: 'Juego de panecillos dulces Dolce Vita',
+    image: require('../assets/d5.webp'),
+    desc: 'Un exclusivo juego Dolce Vita de cuatro panecillos dulces de los creadores de la pizza Fruit Cake.',
+    price: 97,
+    type: 'Dessert',
+  },
+];
+
+const productsList = products.map(el => {
+  return {
+    ...el,
+    added: false,
+    cnt: 1,
+    id: Math.random(),
+  };
+});
+
+export default productsList;
