@@ -38,7 +38,7 @@ const CounterAddBtn = ({prod: {id, cnt, added}}) => {
         {added ? (
           <FontAwesomeIcon size={20} icon={'check'} color={'#fff'} />
         ) : (
-          <Text style={styles.white}>Add</Text>
+          <Text style={styles.white}>Додаты</Text>
         )}
       </TouchableOpacity>
     </View>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   white: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: '700',
   },
   addBtn: {

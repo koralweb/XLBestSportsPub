@@ -32,19 +32,21 @@ const CartScreen = ({navigation}) => {
   return (
     <View style={styles.mainContainer}>
       <TopLine navigation={navigation} />
-      <Text style={styles.title}>Корзина {addedExists && '- ваш заказ:'}</Text>
+      <Text style={styles.title}>Кошик {addedExists && '- ваш заказ:'}</Text>
       {addedExists ? (
         <ScrollView>
           {renderProducts()}
           <View style={styles.totalPrice}>
-            <Text style={styles.totalText}>Сумма: {totalPrice()} €</Text>
+            <Text style={styles.totalText}>Сумма: {totalPrice()} грн</Text>
           </View>
-          <TouchableOpacity style={styles.btn}>
-            <Text style={styles.btnText}>Оформить</Text>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => navigation.push('Booking', {cart: true})}>
+            <Text style={styles.btnText}>Оформити</Text>
           </TouchableOpacity>
         </ScrollView>
       ) : (
-        <Text style={styles.emptyCart}>Ваша корзина пустая</Text>
+        <Text style={styles.emptyCart}>Ваш кошик порожній</Text>
       )}
     </View>
   );
@@ -52,13 +54,6 @@ const CartScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
   ...mainStyles,
-  title: {
-    fontSize: 25,
-    textAlign: 'center',
-    marginVertical: 20,
-    color: colors.blue,
-    fontWeight: '700',
-  },
   totalPrice: {
     borderTopWidth: 1,
     marginHorizontal: 20,

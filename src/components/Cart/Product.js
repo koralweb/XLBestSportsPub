@@ -21,7 +21,7 @@ const Product = ({prod}) => {
             size={30}
           />
         </TouchableOpacity>
-        <Text style={styles.price}>★ {prod.price}€</Text>
+        <Text style={styles.price}>★ {prod.price} грн</Text>
       </View>
     </View>
   );

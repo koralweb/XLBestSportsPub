@@ -5,7 +5,7 @@ const TitlePrice = ({prod: {price, title}}) => {
   return (
     <View style={styles.cont}>
       <Text style={styles.title}>{title}</Text>
-      <Text style={styles.price}>★ {price}€</Text>
+      <Text style={styles.price}>★ {price} грн</Text>
     </View>
   );
 };

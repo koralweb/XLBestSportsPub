@@ -19,6 +19,8 @@ const styles = StyleSheet.create({
   image: {
     marginRight: 'auto',
     marginLeft: 'auto',
+    width: 300,
+    height: 300,
   },
   row: {
     flexDirection: 'row',

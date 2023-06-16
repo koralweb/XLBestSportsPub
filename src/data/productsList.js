@@ -1,141 +1,141 @@
 const products = [
   {
-    title: 'Del Mare',
-    image: require('../assets/p1.jpg'),
-    desc: 'Salsa pizza, salmón, gambas, tomates cherry, alcaparras, queso mozzarella, salsa pesto, rúcula',
+    title: 'Морська',
+    image: require('../assets/229405/lx0_p1.jpg'),
+
     price: 99,
     type: 'Pizza',
   },
   {
-    title: 'Mirtillo Rosso',
-    image: require('../assets/p2.jpg'),
-    desc: 'Salsa de crema, filete de pollo, queso azul, queso mozzarella, salsa de arándanos',
+    title: 'Журавлина',
+    image: require('../assets/229405/lx0_p2.jpg'),
+
     price: 89,
     type: 'Pizza',
   },
   {
-    title: 'Chile con pollo',
-    image: require('../assets/p3.jpg'),
-    desc: 'Salsa de pizza, filete de pollo, pimiento fresco, cebolla caramelizada, queso mozzarella, queso cheddar, salsa de chili dulce',
+    title: 'Чилі з куркою',
+    image: require('../assets/229405/lx0_p3.jpg'),
+
     price: 83,
     type: 'Pizza',
   },
   {
-    title: 'Pepperoni ahumado',
-    image: require('../assets/p4.jpg'),
-    desc: 'Salsa de pizza, pepperoni picante, tocino, caramelizado. cebolla, queso mozzarella, salsa barbacoa',
+    title: 'Копчений пепероні',
+    image: require('../assets/229405/lx0_p4.jpg'),
+
     price: 84,
     type: 'Pizza',
   },
   {
-    title: 'Margarita dolce',
-    image: require('../assets/p5.jpg'),
-    desc: 'Salsa de tomate, tomates frescos, salsa pesto, queso mozzarella, queso parmesano',
+    title: 'Солодка маргарита',
+    image: require('../assets/229405/lx0_p5.jpg'),
+
     price: 60,
     type: 'Pizza',
   },
   {
-    title: 'Filadelfia con aguacate',
-    image: require('../assets/r1.jpg'),
-    desc: 'Salmón, requesón, aguacate, arroz, nori',
+    title: 'Філадельфія з авокадо',
+    image: require('../assets/229405/lx0_r1.jpg'),
+
     price: 48,
     type: 'Rolls',
   },
   {
-    title: 'Filadelfia con camarones',
-    image: require('../assets/r2.jpg'),
-    desc: 'Arroz, salmón, camarón tigre, requesón, nori',
+    title: 'Філадельфія з креветками',
+    image: require('../assets/229405/lx0_r2.jpg'),
+
     price: 49,
     type: 'Rolls',
   },
   {
-    title: 'Rollo unagi',
-    image: require('../assets/r3.jpg'),
-    desc: 'Arroz, filete de anguila ahumada, salmón, requesón, pepino fresco, salsa Unagi, semillas de sésamo, nori',
+    title: 'Ролли унаги',
+    image: require('../assets/229405/lx0_r3.jpg'),
+
     price: 54,
     type: 'Rolls',
   },
   {
-    title: 'Rollo de Japón',
-    image: require('../assets/r4.jpg'),
-    desc: 'Arroz, filete de anguila ahumada, salmón, requesón, pepino fresco, salsa Unagi, semillas de sésamo, nori',
+    title: 'Японський ролл',
+    image: require('../assets/229405/lx0_r4.jpg'),
+
     price: 52,
     type: 'Rolls',
   },
   {
-    title: 'Anguila cremosa',
-    image: require('../assets/r5.jpg'),
-    desc: 'Arroz, filete de anguila ahumada, requesón, salsa unagi, semillas de sésamo, nori',
+    title: 'Вершковий вугор',
+    image: require('../assets/229405/lx0_r5.jpg'),
+
     price: 38,
     type: 'Rolls',
   },
   {
-    title: 'Sushi con atun',
-    image: require('../assets/s1.webp'),
-    desc: 'Atún, arroz, nori, salsa',
+    title: 'Суші з атуном',
+    image: require('../assets/229405/lx0_s1.jpg'),
+
     price: 99,
     type: 'Sushi',
   },
   {
-    title: 'Sushi de camarones',
-    image: require('../assets/s2.webp'),
-    desc: 'Arroz, camarones',
+    title: 'Суші з креветками',
+    image: require('../assets/229405/lx0_s2.jpg'),
+
     price: 11,
     type: 'Sushi',
   },
   {
-    title: 'Sushi con salmón',
-    image: require('../assets/s33.webp'),
-    desc: 'Arroz, salmón',
+    title: 'Суші з лососем',
+    image: require('../assets/229405/lx0_s33.jpg'),
+
     price: 12,
     type: 'Sushi',
   },
   {
-    title: 'Sushi con anguila',
-    image: require('../assets/s4.webp'),
-    desc: 'Arroz, anguila ahumada, nori',
+    title: 'Суші з вугром',
+    image: require('../assets/229405/lx0_s4.jpg'),
+
     price: 10,
     type: 'Sushi',
   },
   {
-    title: 'Gunkan con atún',
-    image: require('../assets/s5.webp'),
-    desc: 'Atún, arroz, nori, salsa',
+    title: 'Гункан з тунцем',
+    image: require('../assets/229405/lx0_s5.jpg'),
+
     price: 11,
     type: 'Sushi',
   },
   {
-    title: 'Rollo dulce hawaiano',
-    image: require('../assets/d1.webp'),
-    desc: 'Panqueque cremoso, queso crema, manzana, plátano, salsa de chocolate',
+    title: 'Гавайський солодкий рол',
+    image: require('../assets/229405/lx0_d1.jpg'),
+
     price: 25,
     type: 'Dessert',
   },
   {
-    title: 'Rollo dulce tropical',
-    image: require('../assets/d2.webp'),
-    desc: 'Panqueque cremoso, queso crema, piña, kiwi, salsa de bayas',
+    title: 'Ролло дульче тропічний',
+    image: require('../assets/229405/lx0_d2.jpg'),
+
     price: 26,
     type: 'Dessert',
   },
   {
-    title: 'Rollo dulce Bongiorno',
-    image: require('../assets/d3.webp'),
-    desc: 'Arroz con leche, queso crema, plátano, naranja, chocolate, salsa de chocolate.',
+    title: 'Ролло дульче Бонджорно',
+    image: require('../assets/229405/lx0_d3.jpg'),
+
     price: 25,
     type: 'Dessert',
   },
   {
-    title: 'Dulce vida dulce rollo',
-    image: require('../assets/d4.webp'),
-    desc: 'Arroz con leche, queso, melocotón, kiwi, coco, salsa de bayas',
+    title: 'Ролл Солодке життя',
+    image: require('../assets/229405/lx0_d4.jpg'),
+
     price: 25,
     type: 'Dessert',
   },
   {
-    title: 'Juego de panecillos dulces Dolce Vita',
-    image: require('../assets/d5.webp'),
-    desc: 'Un exclusivo juego Dolce Vita de cuatro panecillos dulces de los creadores de la pizza Fruit Cake.',
+    title: 'Набір солодких булочок',
+    image: require('../assets/229405/lx0_d5.jpg'),
+
     price: 97,
     type: 'Dessert',
   },

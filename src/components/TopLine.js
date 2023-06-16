@@ -2,11 +2,15 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import colors from '../data/colors';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import Menu from './Menu';
+import menu from '../state/menu';
+import {observer} from 'mobx-react-lite';
 
 const TopLine = ({navigation}) => {
   return (
     <View style={styles.cont}>
-      <TouchableOpacity>
+      {menu.show && <Menu navigation={navigation} />}
+      <TouchableOpacity onPress={() => menu.change()}>
         <FontAwesomeIcon icon={'bars'} color={'#fff'} size={30} />
       </TouchableOpacity>
       <Text style={styles.text}>LX Best Sports Pub</Text>
@@ -26,6 +30,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 20,
     paddingBottom: 20,
+    position: 'relative',
+    zIndex: 99,
   },
   text: {
     color: '#fff',
@@ -34,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TopLine;
+export default observer(TopLine);
