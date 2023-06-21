@@ -13,7 +13,7 @@ const TopLine = ({navigation}) => {
       <TouchableOpacity onPress={() => menu.change()}>
         <FontAwesomeIcon icon={'bars'} color={'#fff'} size={30} />
       </TouchableOpacity>
-      <Text style={styles.text}>LX Best Sports Pub</Text>
+      <Text style={styles.text}>lX Best Sports Pub</Text>
       <TouchableOpacity onPress={() => navigation.push('Cart')}>
         <FontAwesomeIcon icon={'shopping-basket'} color={'#fff'} size={30} />
       </TouchableOpacity>

@@ -21,6 +21,7 @@ const CartScreen = ({navigation}) => {
         return acc + el.price * el.cnt;
       }, 0);
   };
+  console.log('test output');
   const renderProducts = () => {
     return products.list
       .filter(el => el.added)
