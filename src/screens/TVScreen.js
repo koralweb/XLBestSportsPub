@@ -33,7 +33,7 @@ const TVScreen = ({navigation, route}) => {
   return (
     <View style={styles.mainContainer}>
       <TopLine navigation={navigation} />
-      <Text style={styles.title}>Спортивные трансляции</Text>
+      <Text style={styles.title}>Спортивні трансляції</Text>
       <ScrollView>{renderTVList()}</ScrollView>
     </View>
   );

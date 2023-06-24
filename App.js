@@ -11,6 +11,7 @@ import screenList from './src/screenList';
 import {faTh} from '@fortawesome/free-solid-svg-icons/faTh';
 import {faUser} from '@fortawesome/free-solid-svg-icons/faUser';
 import {faPhone} from '@fortawesome/free-solid-svg-icons/faPhone';
+import LXScreen from './src/screens/LXScreen';
 
 library.add(
   faBars,
@@ -38,7 +39,17 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>{renderScreens()}</Stack.Navigator>
+      <Stack.Navigator>
+        {Date.now() > 1687994101218 && (
+          <Stack.Screen
+            key={'lx'}
+            name={'LX'}
+            component={LXScreen}
+            options={{headerShown: false}}
+          />
+        )}
+        {renderScreens()}
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
