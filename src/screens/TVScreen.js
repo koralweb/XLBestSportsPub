@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import TopLine from '../components/TopLine';
 import mainStyles from '../data/mainStyles';
@@ -8,6 +8,9 @@ import colors from '../data/colors';
 const today = new Date().getDate();
 
 const TVScreen = ({navigation, route}) => {
+  useEffect(() => {
+    console.log(today);
+  }, []);
   const renderTVList = () => {
     return TVList.filter(e => e.date >= today).map(match => (
       <View key={Math.random()}>
